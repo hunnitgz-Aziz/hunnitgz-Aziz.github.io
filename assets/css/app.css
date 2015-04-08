@@ -321,6 +321,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 
 .stuff-item img {
   max-width: 100%;
+  border-radius: 3px;
 }
 
 .row.stuff-panel {
