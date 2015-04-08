@@ -438,7 +438,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
   }
 
   .contact .details {
-    margin-top: 42em;
+    margin-top: 30em;
   }  
 
   .about {
@@ -485,7 +485,11 @@ nav.navbar.navbar-default.navbar-fixed-top {
   }
 
   .contact-list li {
-    padding: 0 15px;
+    padding: 0 12px;
+  }
+
+  .contact-list ul {
+    padding: 0;
   }
 
 }
