@@ -439,6 +439,10 @@ nav.navbar.navbar-default.navbar-fixed-top {
 
   .contact .details {
     padding-top: 27em;
+  }
+
+  .stuff .details {
+    padding-top: 8em;
   }  
 
   .about {
@@ -559,6 +563,10 @@ nav.navbar.navbar-default.navbar-fixed-top {
   .navbar .navbar-nav li {
     display: inline-block;
     float: none;
+  }
+
+  .row.stuff-panel {
+    padding: 110px;
   }
 }
 
