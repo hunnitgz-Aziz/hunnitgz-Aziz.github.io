@@ -18,3 +18,13 @@ $(function() {
     }
   });
 });
+
+$(window).scroll(function () {
+    $('.box').each(function () {
+        if (($(this).offset().top - $(window).scrollTop()) < 130) {
+            $(this).stop().fadeTo(100, 0);
+        } else {
+            $(this).stop().fadeTo(1, 1);
+        }
+    });
+});
