@@ -33,3 +33,11 @@ $heading: 'Akzidenz Grotesk', Helvetica, Arial, sans-serif;
     }
   }
 }
+
+@include media-query($phone-portrait) {
+  .pager {
+    .previous a, .next a {
+      font-size: 1.4rem;
+    }
+  }
+}

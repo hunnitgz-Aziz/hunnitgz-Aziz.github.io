@@ -230,6 +230,9 @@ p, .p {
   text-decoration: none;
   background-color: transparent; }
 
+@media screen and (max-width: 480px) {
+  .pager .previous a, .pager .next a {
+    font-size: 1.4rem; } }
 .tags {
   padding: 0.4rem; }
   .tags.branding {
