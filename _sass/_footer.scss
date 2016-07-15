@@ -6,3 +6,11 @@
   border-top: 1px solid #e7e7e7;
   padding: 2rem 0;
 }
+
+@include media-query($phone-portrait) {
+  .footer {
+    h4 {
+      font-size: 1.8rem;
+    }
+  }
+}
