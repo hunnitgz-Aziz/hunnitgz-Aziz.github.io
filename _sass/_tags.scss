@@ -1,0 +1,22 @@
+.tags {
+
+  padding: 0.4rem;
+
+  &.branding {
+    background-color: green;
+    color: $white;
+    font-weight: bold;
+  }
+
+  &.front-end {
+    background-color: red;
+    color: $white;
+    font-weight: bold;
+  }
+
+  &.ui-ux{
+    background-color: yellow;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+}

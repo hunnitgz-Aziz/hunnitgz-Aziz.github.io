@@ -1,0 +1,18 @@
+.hero {
+  margin-top: 7rem;
+  text-align: center;
+  border-bottom: 1px solid #E7E7E7;
+
+  .content{
+    margin: auto;
+    padding: 10rem 5rem;
+
+    .img-responsive {
+      display: block;
+      margin: auto;
+      max-width: 12rem;
+
+    }
+  }
+
+}

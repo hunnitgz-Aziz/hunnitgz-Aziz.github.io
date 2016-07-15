@@ -1,0 +1,13 @@
+# Site settings
+title: I am Aziz.
+email: sonicthehamilton.ar@gmail.com
+description: "Full-Stack Designer"
+baseurl: ""
+url: "http://notansari.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 15
+sass:
+  sass_dir: _sass

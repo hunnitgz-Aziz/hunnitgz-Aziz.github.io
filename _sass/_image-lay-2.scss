@@ -1,0 +1,23 @@
+.image-lay-2 {
+  .post-a {
+    padding-left: 0;
+    margin: 1.5rem 0;
+  }
+
+  .post-b {
+    padding-right: 0;
+    margin: 1.5rem 0;
+  }
+}
+
+@include media-query($phone-landscape) {
+  .image-lay-2 {
+    .post-a {
+      padding: 0;
+    }
+
+    .post-b {
+      padding: 0;
+    }
+  }
+}

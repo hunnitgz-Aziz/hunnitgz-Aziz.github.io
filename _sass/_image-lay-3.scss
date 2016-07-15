@@ -1,0 +1,13 @@
+.image-lay-3 {
+  .diana-grid {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@include media-query($phone-landscape) {
+  .image-lay-3 {
+    .diana-grid {
+      padding: 0;
+    }
+  }
+}

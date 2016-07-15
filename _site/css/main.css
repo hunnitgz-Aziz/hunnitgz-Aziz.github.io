@@ -1,0 +1,246 @@
+.site-tagline {
+  float: left;
+  line-height: 4.5rem;
+  margin-left: 1rem; }
+
+.navbar.navbar-default.navbar-fixed-top.topnav {
+  min-height: 7rem;
+  background: #FFFFFF; }
+  .navbar.navbar-default.navbar-fixed-top.topnav .container.topnav {
+    min-height: 7rem; }
+    .navbar.navbar-default.navbar-fixed-top.topnav .container.topnav .navbar-header {
+      height: 100%; }
+      .navbar.navbar-default.navbar-fixed-top.topnav .container.topnav .navbar-header a.navbar-brand.topnav {
+        height: 100%; }
+        .navbar.navbar-default.navbar-fixed-top.topnav .container.topnav .navbar-header a.navbar-brand.topnav .img-responsive {
+          width: 3.5rem;
+          float: left; }
+  .navbar.navbar-default.navbar-fixed-top.topnav .nav.navbar-nav.navbar-right a {
+    line-height: 4.5rem; }
+
+.navbar-default .navbar-toggle {
+  margin-top: 2.3rem;
+  border: none; }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background: transparent; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #262729; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7rem;
+  border-top: 1px solid #e7e7e7;
+  padding: 2rem 0; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-bottom: 7rem; }
+
+.hero {
+  margin-top: 7rem;
+  text-align: center;
+  border-bottom: 1px solid #E7E7E7; }
+  .hero .content {
+    margin: auto;
+    padding: 10rem 5rem; }
+    .hero .content .img-responsive {
+      display: block;
+      margin: auto;
+      max-width: 12rem; }
+
+.blog .intro-header {
+  margin-top: 10rem; }
+.blog .post-title a {
+  text-decoration: none;
+  box-shadow: inset 0 -5px 0 rgba(124, 173, 195, 0.3);
+  color: inherit;
+  transition: all 200ms cubic-bezier(0.01, 0.5, 0.465, 0.81); }
+  .blog .post-title a:hover {
+    box-shadow: inset 0 -20px 0 rgba(124, 173, 195, 0.3); }
+.blog h3 {
+  color: #858383; }
+.blog .post-meta {
+  color: #A19D9D; }
+
+.home .define-you {
+  text-align: center;
+  padding: 5rem 0;
+  border-bottom: 1px solid #E7E7E7; }
+  .home .define-you p {
+    padding: 0 25rem;
+    margin-top: 2rem; }
+.home .the-works {
+  padding: 5rem 0;
+  border-bottom: 1px solid #E7E7E7; }
+  .home .the-works h3 {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .home .the-works h4 a {
+    text-decoration: none;
+    box-shadow: inset 0 -5px 0 rgba(124, 173, 195, 0.3);
+    color: inherit;
+    transition: all 200ms cubic-bezier(0.01, 0.5, 0.465, 0.81); }
+    .home .the-works h4 a:hover {
+      box-shadow: inset 0 -20px 0 rgba(124, 173, 195, 0.3); }
+  .home .the-works h5 {
+    color: #858383; }
+  .home .the-works .project-item {
+    text-align: center;
+    margin-bottom: 3.5rem; }
+.home .thoughts {
+  text-align: center;
+  padding: 5rem 0; }
+  .home .thoughts h3 {
+    margin-bottom: 2rem; }
+
+@media screen and (max-width: 768px) {
+  .home .define-you p {
+    padding: 0 5rem; } }
+.projects .intro-header {
+  margin-top: 10rem; }
+.projects *, .projects *:before, .projects *:after {
+  box-sizing: border-box !important; }
+.projects .row.menu {
+  -moz-column-width: 18em;
+  -webkit-column-width: 18em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em; }
+.projects .post-preview {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 1rem;
+  width: 100%; }
+  .projects .post-preview a {
+    text-decoration: none;
+    box-shadow: inset 0 -5px 0 rgba(124, 173, 195, 0.3);
+    color: inherit;
+    transition: all 200ms cubic-bezier(0.01, 0.5, 0.465, 0.81); }
+    .projects .post-preview a:hover {
+      box-shadow: inset 0 -20px 0 rgba(124, 173, 195, 0.3); }
+.projects h3 {
+  color: #858383; }
+.projects .post-meta {
+  color: #A19D9D; }
+
+.single-post.intro-header {
+  margin-top: 9rem; }
+
+.image-lay-2 .post-a {
+  padding-left: 0;
+  margin: 1.5rem 0; }
+.image-lay-2 .post-b {
+  padding-right: 0;
+  margin: 1.5rem 0; }
+
+@media screen and (max-width: 640px) {
+  .image-lay-2 .post-a {
+    padding: 0; }
+  .image-lay-2 .post-b {
+    padding: 0; } }
+.image-lay-3 .diana-grid {
+  margin-bottom: 2.5rem; }
+
+@media screen and (max-width: 640px) {
+  .image-lay-3 .diana-grid {
+    padding: 0; } }
+@font-face {
+  font-family: 'Plantin';
+  src: url("../fonts/plantin-regular.ttf") format("truetype"); }
+.post h4 a {
+  text-decoration: none;
+  box-shadow: inset 0 -5px 0 rgba(124, 173, 195, 0.3);
+  color: inherit;
+  transition: all 200ms cubic-bezier(0.01, 0.5, 0.465, 0.81); }
+  .post h4 a:hover {
+    box-shadow: inset 0 -20px 0 rgba(124, 173, 195, 0.3); }
+.post p, .post .p {
+  font-size: 16px;
+  font-family: "Plantin", Helvetica, Arial, sans-serif;
+  line-height: 1.8; }
+
+@font-face {
+  font-family: 'Akzidenz Grotesk';
+  font-weight: 700;
+  src: url("../fonts/Akzidenz Grotesk Light Bold.ttf") format("truetype"); }
+html {
+  font-size: 62.5%; }
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Akzidenz Grotesk", Helvetica, Arial, sans-serif;
+  margin: 0; }
+
+h2 {
+  color: #464545;
+  font-family: "Akzidenz Grotesk", Helvetica, Arial, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem; }
+
+h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Akzidenz Grotesk", Helvetica, Arial, sans-serif; }
+
+h4 {
+  font-size: 2.2rem;
+  font-family: "Akzidenz Grotesk", Helvetica, Arial, sans-serif;
+  line-height: 2;
+  font-weight: 700; }
+
+h5 {
+  font-size: 2rem;
+  font-family: "Akzidenz Grotesk", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 700; }
+
+h6 {
+  font-size: 1.8rem;
+  font-family: "Akzidenz Grotesk", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400; }
+
+p, .p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8; }
+
+@font-face {
+  font-family: 'Akzidenz Grotesk';
+  font-weight: 700;
+  src: url("../fonts/Akzidenz Grotesk Light Bold.ttf") format("truetype"); }
+.pager .previous a, .pager .next a {
+  color: #A19D9D;
+  font-size: 2rem;
+  font-family: "Akzidenz Grotesk", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 700;
+  border: none !important;
+  border-radius: 0; }
+.pager li a:hover {
+  text-decoration: none;
+  background-color: transparent; }
+
+.tags {
+  padding: 0.4rem; }
+  .tags.branding {
+    background-color: green;
+    color: #FFFFFF;
+    font-weight: bold; }
+  .tags.front-end {
+    background-color: red;
+    color: #FFFFFF;
+    font-weight: bold; }
+  .tags.ui-ux {
+    background-color: yellow;
+    font-weight: bold;
+    text-transform: uppercase; }

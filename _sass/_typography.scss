@@ -1,0 +1,68 @@
+// Font weights
+$extra-bold: 800;
+$bold: 700;
+$regular: 400;
+$thin: 300;
+
+@font-face {
+  font-family: 'Akzidenz Grotesk';
+  font-weight: $bold;
+  src: url('../fonts/Akzidenz Grotesk Light Bold.ttf') format('truetype');
+}
+
+$heading: 'Akzidenz Grotesk', Helvetica, Arial, sans-serif;
+
+html {
+  font-size: 62.5%;
+}
+
+h1, %h1 {
+  font-size: 4.8rem;
+  font-weight: $regular;
+  line-height: 1;
+  font-family: $heading;
+  margin: 0;
+}
+
+h2, %h2 {
+  color: $gray;
+  font-family: $heading;
+  font-size: 3.2rem;
+  font-weight: $bold;
+  line-height: $base-line-height;
+  margin-bottom: 1rem;
+}
+
+h3, %h3 {
+  font-size: 2.6rem;
+  font-weight: $bold;
+  line-height: 1.2;
+  font-family: $heading;
+}
+
+h4, %h4 {
+  font-size: 2.2rem;
+  font-family: $heading;
+  line-height: 2;
+  font-weight: $bold;
+}
+
+h5, %h5 {
+  font-size: 2rem;
+  font-family: $heading;
+  line-height: 1;
+  font-weight: $bold;
+}
+
+h6, %h6 {
+  font-size: 1.8rem;
+  font-family: $heading;
+  line-height: 1;
+  font-weight: $regular;
+}
+
+p, .p {
+  font-size: $base-font-size;
+  font-weight: $regular;
+  line-height: 1.8;
+}

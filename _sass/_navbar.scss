@@ -1,0 +1,44 @@
+.site-tagline {
+  float: left;
+  line-height: 4.5rem;
+  margin-left: 1rem;
+}
+
+.navbar.navbar-default.navbar-fixed-top.topnav {
+  min-height: 7rem;
+  background: $white;
+
+  .container.topnav {
+    min-height: 7rem;
+
+    .navbar-header {
+      height: 100%;
+
+      a.navbar-brand.topnav {
+        height: 100%;
+        .img-responsive {
+          width: 3.5rem;
+          float: left;
+        }
+      }
+    }
+  }
+ .nav.navbar-nav.navbar-right a {
+    line-height: 4.5rem;
+  }
+}
+
+.navbar-default .navbar-toggle {
+  margin-top: 2.3rem;
+  border: none;
+
+  &:focus, &:hover {
+    background: transparent;
+  }
+
+
+  .icon-bar {
+    background-color: $black;
+  }
+}
+
