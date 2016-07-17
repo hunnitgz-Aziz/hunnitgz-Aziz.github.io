@@ -104,6 +104,9 @@ body {
 @media screen and (max-width: 768px) {
   .home .define-you p {
     padding: 0 3rem; } }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home .define-you p {
+    padding: 0 15rem; } }
 .projects .intro-header {
   margin-top: 10rem; }
 .projects *, .projects *:before, .projects *:after {
