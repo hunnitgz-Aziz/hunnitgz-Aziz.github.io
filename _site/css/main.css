@@ -142,12 +142,18 @@ body {
 .image-lay-2 .post-b {
   padding-right: 0;
   margin: 1.5rem 0; }
+.image-lay-2 .post-single {
+  max-width: 44rem;
+  margin: auto;
+  padding-top: 1.5rem; }
 
 @media screen and (max-width: 640px) {
   .image-lay-2 .post-a {
     padding: 0; }
   .image-lay-2 .post-b {
-    padding: 0; } }
+    padding: 0; }
+  .image-lay-2 .post-single {
+    max-width: 100%; } }
 .image-lay-3 .diana-grid {
   margin-bottom: 2.5rem; }
 

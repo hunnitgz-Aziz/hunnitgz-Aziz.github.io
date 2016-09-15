@@ -8,6 +8,12 @@
     padding-right: 0;
     margin: 1.5rem 0;
   }
+
+  .post-single {
+    max-width: 44rem;
+    margin: auto;
+    padding-top: 1.5rem;
+  }
 }
 
 @include media-query($phone-landscape) {
@@ -18,6 +24,10 @@
 
     .post-b {
       padding: 0;
+    }
+
+    .post-single {
+      max-width: 100%;
     }
   }
 }
