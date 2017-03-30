@@ -11,3 +11,9 @@ permalink: pretty
 paginate: 15
 sass:
   sass_dir: _sass
+
+
+exclude:
+  - package.json
+  - node_modules
+  - gulpfiles.js
