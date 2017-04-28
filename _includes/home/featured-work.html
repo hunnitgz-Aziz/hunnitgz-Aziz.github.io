@@ -1,0 +1,21 @@
+<section class="the-works" id="the-works">
+	<div class="content">
+		<h3 class="section-title">proof of existence</h3>
+		<p class="section-subtitle">List of featured works</p>
+		<div class="row-block">
+			{% for feature in page.featured_works %}
+				<div class="feature-block">
+					<div class="featured-image">
+						<a target="_blank" href="{{feature.link}}"><img src="{{feature.image}}">
+					</div></a>
+					<div class="featured-info">
+						<p class="tags {{feature.tag}}">{{feature.tag}}</p>
+						<h2 class="post-title"><a target="_blank" href="{{feature.link}}">{{feature.title}}</a></h2>
+						<p class="post-subtitle">{{feature.subtitle}}</p>
+						<p class="work-date">{{feature.date}}</p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

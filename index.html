@@ -1,35 +1,45 @@
 ---
 layout: home
 custom_class: home
+
+featured_works:
+  - image: /img/work/radio_static.gif
+    tag: front-end
+    link: http://musewav.live
+    title: Musewav
+    subtitle: An internet radio station for independent artists.  
+    date: April 2017
+  
+  - image: /img/work/late_nite_rxse.jpg
+    tag: front-end
+    link: http://lateniterxse.com
+    title: Late Nite Rxse
+    subtitle: A fun way of curating the collection of tracks featured on their latest EP.  
+    date: March 2017
+
+  - image: /img/home/woody_thumbnail.jpg
+    tag: photography
+    link: /projects/woody-prologue/
+    title: i am woody
+    subtitle: The time where I developed a deep relationship with my action figure
+    date: October 2015
+
+  - image: /img/home/ee_thumbnail.jpg
+    tag: wordpress
+    link: http://www.envertentertainment.com/
+    title: Envert Entertainment
+    subtitle: Built a site for one of the largest indie music and entertainment platforms in NJ
+    date: April 2017
+
+  - image: /img/work/mlh.jpg
+    tag: branding
+    link: /projects/mlh/
+    title: Major League Hacking
+    subtitle: Creative direction, product designing, building sites you name it. All of this while empowering more than 65K hacker students worldwide!
+    date: August 2014
+
+
 ---
 
-<section class="row define-you">
-	<div class="col-sm-12">
-		<h3>aziz(verb):</h3>
-		<p>Designer and <del>aspiring</del> creative director with a range of graphic design, user experience, branding, and front end development. Hobbies are photography, beat-making, and coloring books.</p>
-	</div>
-</section>
-
-<section class="row the-works">
-	<h3>proof of existence</h3>
-	<div class="project-item col-sm-4">
-		<h4><a href="/projects/">Code+Design</a></h4>
-		<h5>UX & Front End Projects</h5>
-	</div>
-	<div class="project-item col-sm-4">
-		<h4><a href="/photography/">Photography</a></h4>
-		<h5>My fantasies reside here.</h5>
-	</div>
-	<div class="project-item col-sm-4">
-		<h4>Artwork</h4>
-		<h5>Coming soon.</h5>
-	</div>
-</section>
-
-<section class="row thoughts">
-	<div class="col-sm-12">
-		<h3>thought of the day</h3>
-		<p>You can do anything but everything.</p>
-	</div>
-</section>
+{% include home/featured-work.html %}
 
