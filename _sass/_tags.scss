@@ -1,22 +1,32 @@
 .tags {
-
+  display: inline;
   padding: 0.4rem;
+  font-weight: bold;
 
   &.branding {
     background-color: green;
     color: $white;
-    font-weight: bold;
   }
 
   &.front-end {
     background-color: red;
     color: $white;
-    font-weight: bold;
   }
 
   &.ui-ux{
     background-color: yellow;
     font-weight:bold;
     text-transform: uppercase;
+  }
+
+  &.photography {
+    background-color: blue;
+    color: $white;
+    
+  }
+
+  &.wordpress {
+    background-color: #21759A;
+    color: $white;
   }
 }

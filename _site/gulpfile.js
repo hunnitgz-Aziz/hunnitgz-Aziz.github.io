@@ -37,7 +37,6 @@ gulp.task('serve', () => {
   browserSync.init({
     files: [siteRoot + '/**'],
     port: 4000,
-    browser: "google chrome",
     server: {
       baseDir: siteRoot
     }

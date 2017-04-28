@@ -1,11 +1,35 @@
 .hero {
   margin-top: 7rem;
-  text-align: center;
-  border-bottom: 1px solid #E7E7E7;
 
   .content{
     margin: auto;
-    padding: 10rem 5rem;
+    overflow: hidden;
+
+    .title-block, .about-block {
+      float: left;
+      height: 40rem;
+    }
+
+    .title-block {
+      background: #e4f1ed;
+      position: relative;
+      width: 60%;
+
+      .title-block-content {
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .about-block {
+      background: #e4edf1;
+      margin-left: 1.5rem;
+      padding: 3rem;
+      width: 38%;
+    }
 
     .img-responsive {
       display: block;
@@ -14,5 +38,19 @@
 
     }
   }
+  @include media-query ($tablet-portrait) {
+    .content {
+      .title-block, .about-block {
+        width: 100%;
+      }
 
+      .title-block {
+        margin-bottom: 3rem;
+      }
+      
+      .about-block {
+        margin-left: 0;
+      }
+    }
+  }
 }

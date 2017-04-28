@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Plantin';
+  src: url('../fonts/plantin-regular.ttf') format('truetype');
+}
+
+$body: 'Plantin', Helvetica, Arial, sans-serif;
+
+.project {
+	.wrap {
+		margin-bottom: 24rem;
+		.content {
+			.project-details { 
+				margin-top: 10rem; 
+
+				.project-cat-block {
+					margin: 4rem 0 8rem;
+					text-align: center;
+
+					.triangle-down {
+						border-left: 25px solid transparent;
+						border-right: 25px solid transparent;
+						border-top: 25px solid #ffd2d2;
+						height: 0;
+						margin: auto;
+						width: 0;
+						
+					} 
+				}
+
+				.mission {
+					line-height: 1.5;
+					padding: 5rem;
+				}
+			}
+
+			.entry-title {
+				padding: 3.2rem 0 4.4rem;
+				max-width: 80rem;
+		    margin: auto;
+		    text-align: center;
+
+				h1 { 
+					font-weight: bold;
+				}
+			}
+
+			.entry-content {
+				margin: auto;
+				max-width: 80rem;
+
+				.list-point:before {
+					color: #1280f1;
+					content:'\25BA';
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+}

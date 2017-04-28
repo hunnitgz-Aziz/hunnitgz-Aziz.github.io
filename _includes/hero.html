@@ -1,6 +1,15 @@
-<section class="hero">
+<section id="hero" class="hero">
   <div class="content">
-    <img src="{{ '/img/home/hero_img.svg' | prepend: site.baseurl }}">
-    <h3>Not <strike>Ansari</strike></h3>
+  	<div class="title-block">
+  		<div class="title-block-content">
+  			<img class="title-logo" src="{{ '/img/home/hero_img.svg' | prepend: site.baseurl }}">
+    		<h3>Not <strike>Ansari</strike></h3>
+  		</div>
+  	</div>
+  	<div class="about-block">
+  		{% include home/about.html %}
+      {% include home/thoughts.html %}
+
+  	</div>
   </div>
 </section>

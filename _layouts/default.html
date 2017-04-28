@@ -6,10 +6,12 @@
 <body {% if page.custom_class %}class="{{ page.custom_class }}"{% endif %}>
 
     {% include nav.html %}
-   
-    <div class="container">
-      {{ content }}
-    </div>
+   <main class="wrap">
+    	{{ content }}
+   </main>
+    
+    
+    
     {% include footer.html %}
 
 </body>

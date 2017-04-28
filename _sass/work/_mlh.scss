@@ -1,0 +1,77 @@
+.mlh {
+
+	.trans_img {
+		margin-top: 9rem;
+		text-align: center;
+
+		img {
+			display: block;
+	    max-width: 20rem;
+	    margin: auto;
+	    width: 100%;
+		}
+	}
+
+	.brand_learn {
+		margin: 9rem 0;
+
+		.mlh_analysis {
+			overflow: hidden;
+			margin: 6rem 0;
+
+			.prezi, .logo_breakdown {
+				float: left;
+				width: 50%;
+			}
+
+			.logo_breakdown {
+				background: #f0f8ff;
+				padding: 4rem;
+			}
+
+			.prezi {
+				border-right: 1rem solid #FFF;
+				height: 54rem;
+				position: relative;
+
+				.slider {
+					transform: translateY(40%);
+				}
+			}
+
+			.slick-dots li.slick-active button:before {
+		    color: #0079ff;
+		    opacity: 0.75;
+			}
+		}
+	}
+
+	.design_system {
+		margin-bottom: 9rem;
+	}
+
+	.world_share {
+		margin-bottom: 9rem;
+	}
+
+
+
+	@include media-query ($tablet-portrait) { 
+		.design_system {
+			.mlh_analysis {
+				.prezi, .logo_breakdown {
+					width: 100%;
+				}
+
+				.prezi {
+					height: auto;
+
+					.slider {
+						transform: none;
+					}
+				}
+			}
+		}
+
+	}
+}

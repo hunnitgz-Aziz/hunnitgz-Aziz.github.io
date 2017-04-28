@@ -23,9 +23,7 @@
     <link rel="stylesheet" href="/css/syntax.css">
 
     <!-- Custom Fonts -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/97d5319063.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,41 +38,36 @@
 <body class="post">
 
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="http://notansari.com/"><img src="/img/home/header_img.png"><span class="site-tagline">i am aziz.</span></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/projects/">Code+Design</a>
-                    </li>
-                    <li>
-                        <a href="/photography/">Photography</a>
-                    </li>
-                    <li>
-                        <a href="/blog/">Blog</a>
-                    </li>
-                    <li>
-                        <a href="mailto:azizramos00@gmail.com">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-   
-    <div class="container">
-      <!-- Post Header -->
+  <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+  <div class="container topnav">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand topnav" href="http://notansari.com/"><img src="/img/home/header_img.png"><span class="site-tagline">i am aziz.</span></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a id="play" class="play">Turn on the Radio</a>
+        <a id="pause" class="pause">Turn off the Radio</a>
+      </li>
+        <li>
+          <a href="mailto:azizramos00@gmail.com">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+   <main class="wrap">
+    	<!-- Post Header -->
 <header class="intro-header single-post" style="background-image: url('/')">
     <div class="container">
         <div class="row">
@@ -148,20 +141,19 @@
 
 <hr>
 
-    </div>
+   </main>
+    
+    
+    
     <footer class="footer text-center">
-<div class="container">
-    <div class="row">
-        <div class="footer-col col-md-12">
-            <div class="portfolio-head text-center">
-                <h4>aziz always needs something to do.</h4>
-            </div>
-            <ul class="list-inline social-buttons">
-                <li><a href="mailto:azizramos1@gmail.com?subject=Let's Work">azizramos00@gmail.com</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+<div class="content">
+  <h4>aziz always needs something to do.</h4>
+  
+  <ul class="social-role">
+    <li><a href="mailto:azizramos1@gmail.com?subject=Let's Work">azizramos00@gmail.com</a></li>
+    <li><a target="_blank" href="https://github.com/hunnitgz-Aziz"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    <li><a target="_blank" href="https://www.instagram.com/_hunnitgz/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+  </ul>
 </div>
 </footer>
 
@@ -173,6 +165,13 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="/js/clean-blog.min.js "></script>
+
+<script src="/js/app.js "></script>
+
+<script src="/js/jquery.shoutcast.easy.min.js?host=192.240.102.198&port=14293"></script>
+
+<script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="/js/slick.min.js"></script>
 
 
 </body>
