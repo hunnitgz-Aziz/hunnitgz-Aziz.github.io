@@ -57,21 +57,18 @@
 
 
 	@include media-query ($tablet-portrait) { 
-		.design_system {
-			.mlh_analysis {
-				.prezi, .logo_breakdown {
-					width: 100%;
-				}
+		.brand_learn .mlh_analysis {
+			.prezi, .logo_breakdown {
+				width: 100%;
+			}
 
-				.prezi {
-					height: auto;
+			.prezi {
+				height: auto;
 
-					.slider {
-						transform: none;
-					}
+				.slider {
+					transform: none;
 				}
 			}
 		}
-
 	}
 }

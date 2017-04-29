@@ -419,11 +419,11 @@ p, .p {
 .mlh .world_share {
   margin-bottom: 9rem; }
 @media screen and (max-width: 768px) {
-  .mlh .design_system .mlh_analysis .prezi, .mlh .design_system .mlh_analysis .logo_breakdown {
+  .mlh .brand_learn .mlh_analysis .prezi, .mlh .brand_learn .mlh_analysis .logo_breakdown {
     width: 100%; }
-  .mlh .design_system .mlh_analysis .prezi {
+  .mlh .brand_learn .mlh_analysis .prezi {
     height: auto; }
-    .mlh .design_system .mlh_analysis .prezi .slider {
+    .mlh .brand_learn .mlh_analysis .prezi .slider {
       transform: none; } }
 
 /* Slider */
@@ -433,8 +433,8 @@ p, .p {
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url('/fonts/slick.eot?1462527348');
-  src: url('/fonts/slick.eot?&1462527348#iefix') format("embedded-opentype"), url('/fonts/slick.woff?1462527348') format("woff"), url('/fonts/slick.ttf?1462527348') format("truetype"), url('/fonts/slick.svg?1462527348#slick') format("svg");
+  src: url('/fonts/slick.eot?1493344729');
+  src: url('/fonts/slick.eot?&1493344729#iefix') format("embedded-opentype"), url('/fonts/slick.woff?1493344729') format("woff"), url('/fonts/slick.ttf?1493344729') format("truetype"), url('/fonts/slick.svg?1493344729#slick') format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Arrows */
