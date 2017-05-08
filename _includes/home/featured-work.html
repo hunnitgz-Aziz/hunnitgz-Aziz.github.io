@@ -1,16 +1,16 @@
 <section class="the-works" id="the-works">
 	<div class="content">
 		<h3 class="section-title">proof of existence</h3>
-		<p class="section-subtitle">List of featured works</p>
+		<p class="section-subtitle">List of stuff aziz did</p>
 		<div class="row-block">
 			{% for feature in page.featured_works %}
 				<div class="feature-block">
 					<div class="featured-image">
-						<a target="_blank" href="{{feature.link}}"><img src="{{feature.image}}">
+						<a href="{{feature.link}}"><img src="{{feature.image}}">
 					</div></a>
 					<div class="featured-info">
 						<p class="tags {{feature.tag}}">{{feature.tag}}</p>
-						<h2 class="post-title"><a target="_blank" href="{{feature.link}}">{{feature.title}}</a></h2>
+						<h2 class="post-title"><a href="{{feature.link}}">{{feature.title}}</a></h2>
 						<p class="post-subtitle">{{feature.subtitle}}</p>
 						<p class="work-date">{{feature.date}}</p>
 					</div>

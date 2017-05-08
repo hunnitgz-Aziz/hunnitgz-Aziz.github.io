@@ -1,5 +1,5 @@
 var quotes = [
-	"You can anything but everything",
+	"You can do anything but everything",
 	"If you fail to plan, plan to fail - Benjamin Franklin",
 	"Procastination is like a credit card, it's a lot of fun until you get the bill - Christopher Parker",
 	"The only thing necessary for the triumph of evil is for good men to do nothing - Edmund Burke"
