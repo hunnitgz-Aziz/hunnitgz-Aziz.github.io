@@ -28,5 +28,11 @@ body {
 	}
 }
 
+.annotation .list-point:before {
+	color: #1280f1;
+	content:'\25BA';
+	margin-right: 1rem;
+}
+
 
 
