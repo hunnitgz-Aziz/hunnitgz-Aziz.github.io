@@ -71,6 +71,11 @@ body {
     content: '\25BA';
     margin-right: 1rem; }
 
+.annotation .list-point:before {
+  color: #1280f1;
+  content: '\25BA';
+  margin-right: 1rem; }
+
 .hero {
   margin-top: 7rem; }
   .hero .content {
@@ -384,6 +389,15 @@ p, .p {
     text-align: center; }
     .project .wrap .content .entry-title h1 {
       font-weight: bold; }
+  .project .wrap .content .revision-tr {
+    overflow: hidden; }
+    .project .wrap .content .revision-tr .annotation, .project .wrap .content .revision-tr .rev-graphic {
+      float: left; }
+    .project .wrap .content .revision-tr .annotation {
+      max-width: 30rem;
+      padding: 1.5rem; }
+    .project .wrap .content .revision-tr .rev-graphic {
+      max-width: 70rem; }
 
 .mlh .trans_img {
   margin-top: 9rem;

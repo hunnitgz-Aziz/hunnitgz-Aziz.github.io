@@ -40,6 +40,23 @@
 					font-weight: bold;
 				}
 			}
+
+			.revision-tr {
+				overflow: hidden;
+
+				.annotation, .rev-graphic {
+					float: left;
+				}
+
+				.annotation {
+					max-width: 30rem;
+					padding: 1.5rem;
+				}
+
+				.rev-graphic {
+					max-width: 70rem;
+				}
+			}
 		}
 	}
 }
