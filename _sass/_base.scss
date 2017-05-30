@@ -26,6 +26,19 @@ body {
 		content:'\25BA';
 		margin-right: 1rem;
 	}
+
+	pre {
+		background: $black;
+		counter-reset: line;
+		white-space: pre-wrap;
+		white-space: -moz-pre-wrap;
+		white-space: -o-pre-wrap;
+		word-wrap: break-word;
+
+		code {
+			color: $white;
+		}
+	}
 }
 
 .annotation .list-point:before {
