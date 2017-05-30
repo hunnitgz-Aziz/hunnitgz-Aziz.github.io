@@ -70,6 +70,15 @@ body {
     color: #1280f1;
     content: '\25BA';
     margin-right: 1rem; }
+  .entry-content pre {
+    background: #262729;
+    counter-reset: line;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word; }
+    .entry-content pre code {
+      color: #FFFFFF; }
 
 .annotation .list-point:before {
   color: #1280f1;

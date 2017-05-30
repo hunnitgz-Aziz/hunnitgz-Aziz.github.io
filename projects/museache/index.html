@@ -1,0 +1,123 @@
+---
+layout: default
+custom_class: project cardboard
+
+project_image: /img/work/museache/rocket_power.jpg
+project_name: Museache
+project_color: red
+project_mission: Redesign and rebrand one of New Jersey's best creative groups.
+---
+
+{% include project/project-info.html 
+		project_image=page.project_image
+		project_mission=page.project_mission 
+    project_name=page.project_name %}
+
+<div class="content">
+	<div class="entry-title">
+		<h1>The Metamorphosis</h1>
+		<p>Redefining our brand, purpose, and goals.</p>
+	</div>
+</div>
+
+<div class="content">
+	<div class="entry-content">
+		<p><a href="http://museache.com/">Museache,</a> is a group of creative souls who specialize in visual and media arts along with stage design. We're on a mission to solve problems for the DIY art &amp; music community. Well, it didn't start off this way in which it was a blog solely for media consumption. Below is what it used to look like.</p>
+	</div>
+</div>
+
+<div class="content">
+	<img style="margin: 4rem 0; border: 1px solid gray;" src="/img/work/museache/landing_page_v1.jpg">
+	<div class="entry-content">
+		<p>It's a beautiful design indeed, but the problem was that we were not cut out to be a traditional blog. Our work outside of the blog was not reflected in our product.</p>
+	</div>
+</div>
+
+<div class="content">
+	<img style="margin: 4rem 0; border: 1px solid gray;" src="/img/work/museache/museache.gif">
+	<div class="entry-content">
+		<p>Our approach this time was simply put our work and mission out in the forefront of the site for proper brand communication.</p>
+	</div>
+</div>
+
+<div class="content">
+	<div class="entry-title">
+		<h1>Using Timber</h1>
+		<p>Taking my interests to another level</p>
+	</div>
+</div>
+<div class="content">
+	<div class="entry-content">
+		<p>Using <a href="https://www.upstatement.com/timber/">Timber</a> is absolutely amazing. <a href="https://www.upstatement.com/">Upstatement,</a> one of my favorite creative agencies, made this tool to make Wordpress development faster and smarter using Twig Template Engine. Using this tool enforced me to adhere to the DRY (don't repeat yourself) and MVC principles in my markup. With the integration of Gulp and SASS, this is an ultimate baby-making experience.</p>
+	</div>
+	<div class="entry-content">
+		<h4>Challenges</h4>
+		<p>Despite how flawless the documentation is, I found pagination to be very difficult to integrate on static pages. For this arrangement of content there was a little twist in plugging the function into the PHP file that renders Twig template. If you have a Home and Blog and you'd like to use pagination on your Blog page try this method:</p>
+		<pre>
+			<code>
+//home.php
+
+$context = Timber::get_context();
+$post = new TimberPost();
+$context['post'] = $post;
+
+if ( is_front_page() && is_home() ) {
+  // Default homepage
+} elseif ( is_front_page() ) {
+  // static homepage
+  $args = array(
+      'posts_per_page' => 2
+  );
+  $context['posts'] = Timber::get_posts($args);
+
+  
+} elseif ( is_home() ) {
+  // blog page
+	$args = array(
+      'posts_per_page' => 12
+  );
+
+  $args = array_merge( $args, array( 'paged' => $paged ) );
+  $context['posts'] = Timber::get_posts($args);
+  $context['pagination'] = Timber::get_pagination($args);
+  query_posts($args);
+  query_posts('paged='.$paged);
+
+} else {
+  //everyting else
+}
+
+Timber::render(array('page-' . $post->post_name . '.twig', 'page-home.twig'), $context);
+			</code>
+		</pre>
+		<p>When using the static page arrangement you're using a page template. Since home.php is the first page template page-blog.php functions were only able to be called from there. And it had to be in this logical order for the pagination function to work.</p>
+	</div>
+</div>
+
+<div class="content">
+	<div class="entry-title">
+		<h1>Moving Forward</h1>
+		<p>Lessons and excited for the future</p>
+	</div>
+</div>
+
+<div class="content">
+	<div class="entry-content">
+		<p>There's nothing like working with these tools to jumpstart your unique identity in a short time. Making the identity with a group of friends you can trust goes even further. I'm excited to build on top of this project and show the world what we're made of.</p>
+	</div>
+</div>
+
+<div class="content">
+	<div class="entry-content">
+		<h4>Technologies Used:</h4>
+		<p class="list-point"><a href="https://www.upstatement.com/timber/">Timber</a></p>
+		<p class="list-point">Wordpress</p>
+		<p class="list-point">SASS</p>
+	</div>
+	<div class="entry-content">
+		<h4>Credits</h4>
+		<p>Designed by <a href="https://dribbble.com/zramos">Zahir Ramos</a> and myself</p>
+		<p><a href="http://museache.com/">Visit the site</a></p>
+	</div>
+	
+</div>
