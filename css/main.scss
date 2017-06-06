@@ -29,6 +29,12 @@ $xxl-desktop:      10000px;
     }
 }
 
+@mixin min-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
 @mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) {
   
   color: $textColor;
@@ -180,18 +186,16 @@ $xxl-desktop:      10000px;
         "hero",
         "blog",
         "home",
-        "projects",
-        "single-post",
         "image-lay-2",
         "image-lay-3",
         "post",
         "typography",
-        "pager",
         "tags",
         "work",
         "project",
         "work/mlh",
-        "about"
+        "about",
+        "photo"
 ;
 
 @import "lib/slick-theme";

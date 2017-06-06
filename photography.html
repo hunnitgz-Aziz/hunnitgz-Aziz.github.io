@@ -1,42 +1,28 @@
 ---
-layout: project
-custom_class: projects
-title: "Photography"
-description: 
+layout: default
+custom_class: photo
+
+featured_works:
+- image: /img/home/woody_thumbnail.jpg
+  tag: character
+  link: /photos/woody-prologue/
+  title: i am woody
+  subtitle: The time where I developed a deep relationship with my action figure
+  date: October 2015
+
+- image: /img/home/et001_thumbnail.jpg
+  tag: studio
+  link: /photos/et001/
+  title: Everything's Taken 001
+  subtitle: I was really into anachronism for some reason
+  date: May 2016
+
+- image: /img/home/et002_thumbnail.jpg
+  tag: outdoor
+  link: /photos/et002/
+  title: Everything's Taken 002
+  subtitle: Just a nice day at the park
+  date: July 2016
 ---
 
-{% for post in site.posts %}
-    {% if post.category contains 'Photo' %}
-        <div class="post-preview">
-            
-                <h2 class="post-title"> 
-                    <a href="{{ post.url | prepend: site.baseurl }}">          
-                    {{ post.title }}
-                    </a>
-                </h2>
-            
-            {% if post.subtitle %}
-                <h3 class="post-subtitle">
-                    {{ post.subtitle }}
-                </h3>
-            {% endif %}
-            <p class="post-meta">{{ post.date | date: "%B %Y" }}</p>
-        </div>
-    {% endif %}
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+{% include photo/photo-project.html %}

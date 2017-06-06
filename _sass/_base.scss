@@ -47,5 +47,17 @@ body {
 	margin-right: 1rem;
 }
 
+.row-block {
+	-moz-column-width: 24em;
+  -webkit-column-width: 24em;
+  -moz-column-gap: 4em;
+  -webkit-column-gap: 4em;
+  margin-bottom: 8rem;
+
+  .photo {
+  	margin-bottom: 4em;
+  }
+}
+
 
 

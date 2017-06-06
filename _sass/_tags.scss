@@ -13,13 +13,13 @@
     color: $white;
   }
 
-  &.ui-ux{
+  &.ui-ux {
     background-color: yellow;
     font-weight:bold;
     text-transform: uppercase;
   }
 
-  &.photography {
+  &.character {
     background-color: blue;
     color: $white;
     
@@ -33,5 +33,15 @@
   &.creative-market {
     background-color: #8ba753;
     color: $white;
+  }
+
+  &.outdoor {
+    background-color: pink;
+    color: $black;
+  }
+
+  &.studio {
+    background-color: orange;
+    color: $black;
   }
 }
