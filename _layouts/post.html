@@ -4,49 +4,17 @@ custom_class: post
 
 ---
 
-<!-- Post Header -->
-<header class="intro-header single-post" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h2>{{ page.title }}</h2>
-                    {% if page.subtitle %}
-                    <h3 class="subheading">{{ page.subtitle }}</h3>
-                    {% endif %}
-                    <hr class="small"></hr>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+<div class="content">
+  <!-- Post Header -->
+  <div class="blog-header">
+    {% if page.header-img %}<img src="{{page.header-img}}">{% endif %}
+    <h1 class="blog-journal">{{page.title}}</h1>
+    <p class="blog-date">{{page.date | date: "%B %-d, %Y"}}</p>
+  </div>
+  
+  <div class="blog-content">
+    {{ content }}
+  </div>
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+</div>
 
-				{{ content }}
-
-                <hr>
-
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-            </div>
-        </div>
-    </div>
-</article>
-
-<hr>
