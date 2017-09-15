@@ -1,7 +1,33 @@
 .blog {
+  padding: 6rem 0;
 
-  .intro-header {
-    margin-top: 10rem;
+  .post-container .content {
+    margin-bottom: 8rem;
+  }
+
+  .post-block {
+    margin-top: 5rem;
+    text-align: center;
+
+    .post-preview {
+      display: block;
+      padding: 2rem 0;
+
+      .post-meta {
+        margin-right: 2rem;
+      }
+
+      .post-title {
+        color: $black;
+        font-weight: $bold;
+        font-size: 2rem;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
   }
 
   .post-title {
@@ -16,10 +42,6 @@
       }
 
     }
-  }
-
-  h3 {
-    color: $medium-gray;
   }
 
   .post-meta {

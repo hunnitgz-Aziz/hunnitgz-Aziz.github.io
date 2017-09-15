@@ -1,0 +1,22 @@
+---
+layout: default
+custom_class: blog
+---
+
+<section id="post-container" class="post-container">
+  <div class="content">
+    <h3 class="section-title">journal</h3>
+    <p class="section-subtitle">The many notes of Aziz</p>
+  
+    <div class="post-block">
+    {% for post in site.posts %}
+      {% if post.category contains 'Post' %}
+        <a class="post-preview" href="{{ post.url | prepend: site.baseurl }}"><span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span><span class="post-title">{{ post.title }}</span></a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</section>
+
+
+

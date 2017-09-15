@@ -17,15 +17,15 @@ body {
 	width: 90%;
 }
 
+.list-point:before {
+	color: #1280f1;
+	content:'\25BA';
+	margin-right: 1rem;
+}
+
 .entry-content {
 	margin: auto;
 	max-width: 80rem;
-
-	.list-point:before {
-		color: #1280f1;
-		content:'\25BA';
-		margin-right: 1rem;
-	}
 
 	pre {
 		background: $black;
