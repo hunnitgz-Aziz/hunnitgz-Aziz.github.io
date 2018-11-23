@@ -2,10 +2,12 @@
 	.wrap {
 		margin-bottom: 24rem;
 		.content {
+			img {
+				margin-bottom: 2rem;
+			}
 			.project-details { 
-				margin-top: 10rem; 
-
 				img {
+					display: block;
 					margin: auto;
 				}
 
@@ -20,7 +22,9 @@
 						height: 0;
 						margin: auto;
 						width: 0;
-						
+						animation: bounce 0.5s;
+					  animation-direction: alternate;
+					  animation-iteration-count: infinite;
 					} 
 				}
 

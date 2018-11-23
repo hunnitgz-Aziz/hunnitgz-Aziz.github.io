@@ -4,13 +4,11 @@
 {% include head.html %}
 
 <body {% if page.custom_class %}class="{{ page.custom_class }}"{% endif %}>
-
+		{% include components/preloader.html %}
     {% include nav.html %}
-   
-    {% include hero.html %}
   
     {{ content }}
-   
+
     {% include footer.html %}
 
 </body>

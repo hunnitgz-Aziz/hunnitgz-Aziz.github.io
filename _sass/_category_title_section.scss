@@ -1,0 +1,36 @@
+.category-title-container {
+	background: url('../img/global/tape.png') no-repeat center center/contain;
+	position: relative;
+	text-align: center;
+	z-index: 0;
+	height: 8rem;
+
+	.category-title {
+		font-size: 32px;
+		mix-blend-mode: multiply;
+		position: absolute;
+		text-indent: -9999em;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+		width: 100%;
+	}
+}
+
+.builds {
+	.category-title {
+		background: url('../img/home/build.png') no-repeat center center/contain;
+	}
+}
+
+.web {
+	.category-title {
+		background: url('../img/home/web.png') no-repeat center center/contain;
+	}
+}
+
+.photo {
+	.category-title {
+		background: url('../img/home/photos.png') no-repeat center center/contain;
+	}
+}
