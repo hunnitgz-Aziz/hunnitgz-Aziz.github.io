@@ -1,45 +1,26 @@
-.site-tagline {
-  float: left;
-  line-height: 4.5rem;
-  margin-left: 1rem;
-}
-
-.navbar.navbar-default.navbar-fixed-top.topnav {
-  min-height: 7rem;
-  background: $white;
+.navbar {
+  background: transparent;
   border: none;
+  margin-bottom: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 
-  .container.topnav {
-    min-height: 7rem;
+  .site-logo {
+    display: block;
+    text-align: center;
 
-    .navbar-header {
-      height: 100%;
-
-      a.navbar-brand.topnav {
-        height: 100%;
-        .img-responsive {
-          width: 3.5rem;
-          float: left;
-        }
-      }
+    img {
+      padding: 1rem 0;
+      height: 8rem;
+      max-width: 240px;
+      margin: auto;
+      pointer-events: none;
+      user-select: none;
     }
   }
- .nav.navbar-nav.navbar-right a {
-    line-height: 4.5rem;
-  }
 }
 
-.navbar-default .navbar-toggle {
-  margin-top: 2.3rem;
-  border: none;
 
-  &:focus, &:hover {
-    background: transparent;
-  }
-
-
-  .icon-bar {
-    background-color: $black;
-  }
-}
 

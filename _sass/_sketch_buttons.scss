@@ -1,0 +1,58 @@
+.sketch-link-container {
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  margin: auto;
+  height: 50%;
+
+  .sketch-block {
+  	position: relative;
+  	max-width: 720px;
+  	margin: auto;
+  	height: 100%;
+  }
+
+	.sketch-btn {
+		position: absolute;
+	  height: 18rem;
+	  max-height: 16rem;
+	  max-width: 26rem;
+	  display: block;
+	  width: 32rem;
+	  transition: all ease-in-out 0.2s;
+
+	  @include media-query($phone-portrait) {
+	  	max-width: 13rem;
+	  	max-height: 13rem;
+	  }
+
+	  @include min-query($tablet-portrait) {
+	  	max-width: 26rem;
+	  }
+
+		&.web-btn {
+			background: url('../img/home/web.png') no-repeat center center/contain;
+			top: 50px;
+			left: 0;
+		}
+
+		&.build-btn {
+			background: url('../img/home/build.png') no-repeat center center/contain;
+			bottom: 30px;
+			left: 0;
+		}
+
+		&.photo-btn {
+			background: url('../img/home/photos.png') no-repeat center center/contain;
+			bottom: 30px;
+	    right: 0;
+		}
+
+		&.about-btn {
+			background: url('../img/home/about.png') no-repeat center center/contain;
+			top: 50px;
+			right: 0;
+		}
+	}
+}
